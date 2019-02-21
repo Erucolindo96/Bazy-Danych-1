@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Gui_SwingPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>database_connection.entities.Klient</class>
+    <class>database_connection.entities.Książka</class>
+    <class>database_connection.entities.Kategoria_1</class>
+    <class>database_connection.entities.Wydawnictwo</class>
+    <class>database_connection.entities.Dostawca_1</class>
+    <class>database_connection.entities.Adres_1</class>
+    <class>database_connection.entities.Autor_1</class>
+    <class>database_connection.entities.Półka</class>
+    <class>database_connection.entities.Transakcja</class>
+    <class>database_connection.entities.Autor</class>
+    <class>database_connection.entities.Kategoria</class>
+    <class>database_connection.entities.Dostawca</class>
+    <class>database_connection.entities.Adres</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="szynka1!"/>
+    </properties>
+  </persistence-unit>
+</persistence>
